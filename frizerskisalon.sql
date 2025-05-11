@@ -1,4 +1,4 @@
-﻿--create database frizerskisalon,
+﻿create database frizerskisalon;
 
 --use frizerskisalon;
 
@@ -15,7 +15,7 @@
 --sifra int,
 --ime varchar(20),
 --prezime varchar(20),
---djelatnik varchar(20),
+--djelatnik varchar(20)
 --);
 
 --create table djelatnik(

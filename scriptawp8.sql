@@ -1,5 +1,4 @@
-﻿
---create database edunovawp8
+﻿--create database edunovawp8
 
 --drop database edunovawp8;
 
