@@ -1,0 +1,26 @@
+--create database kulturnoumetnickodrustvo;
+--use kulturnoumetnickodrustvo;
+
+--CREATE TABLE Mjesto (
+--    mjesto_id INT PRIMARY KEY,
+--    naziv VARCHAR(100) NOT NULL,
+--    drzava VARCHAR(100) -- zbog inozemstva
+--);
+--CREATE TABLE Clan (
+--    clan_id INT PRIMARY KEY,
+--    ime VARCHAR(100),
+--    prezime VARCHAR(100)
+--);
+--CREATE TABLE Nastup (
+--    nastup_id INT PRIMARY KEY,
+--    datum DATE,
+--    mjesto_id INT NOT NULL,
+--    FOREIGN KEY (mjesto_id) REFERENCES Mjesto(mjesto_id)
+--);
+--CREATE TABLE Sudjelovanje (
+--    clan_id INT,
+--    nastup_id INT,
+--    PRIMARY KEY (clan_id, nastup_id),
+--    FOREIGN KEY (clan_id) REFERENCES Clan(clan_id),
+--    FOREIGN KEY (nastup_id) REFERENCES Nastup(nastup_id)
+--);
