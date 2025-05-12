@@ -1,0 +1,24 @@
+--create database nakladnik;
+--use nakladnik;
+--CREATE TABLE Mjesto (
+--    mjesto_id INT PRIMARY KEY,
+--    naziv VARCHAR(100) NOT NULL
+--);
+--CREATE TABLE Nakladnik (
+--    nakladnik_id INT PRIMARY KEY,
+--    naziv VARCHAR(100) NOT NULL,
+--    mjesto_id INT NOT NULL,
+--    FOREIGN KEY (mjesto_id) REFERENCES Mjesto(mjesto_id)
+--);
+--CREATE TABLE Djelo (
+--    djelo_id INT PRIMARY KEY,
+--    naslov VARCHAR(200) NOT NULL
+--);
+--CREATE TABLE Izdavanje (
+--    nakladnik_id INT,
+--    djelo_id INT,
+--    godina_izdanja INT,
+--    PRIMARY KEY (nakladnik_id, djelo_id),
+--    FOREIGN KEY (nakladnik_id) REFERENCES Nakladnik(nakladnik_id),
+--    FOREIGN KEY (djelo_id) REFERENCES Djelo(djelo_id)
+--);
