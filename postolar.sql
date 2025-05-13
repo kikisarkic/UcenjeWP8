@@ -1,0 +1,28 @@
+--create database postolar;
+
+--CREATE TABLE Korisnik (
+--    id INT PRIMARY KEY,
+--    ime VARCHAR(50),
+--    prezime VARCHAR(50),
+--    kontakt VARCHAR(100)
+--);
+--CREATE TABLE Obuca (
+--    id INT PRIMARY KEY,
+--    korisnik_id INT,
+--    opis VARCHAR(100),
+--    FOREIGN KEY (korisnik_id) REFERENCES Korisnik(id)
+--);
+--CREATE TABLE Popravak (
+--    id INT PRIMARY KEY,
+--    obuca_id INT,
+--    datum_pocetka DATE,
+--    datum_zavrsetka DATE,
+--    opis VARCHAR(255),
+--    FOREIGN KEY (obuca_id) REFERENCES Obuca(id)
+--);
+--CREATE TABLE Postolar (
+--    id INT PRIMARY KEY,
+--    ime VARCHAR(50),
+--    prezime VARCHAR(50)
+--);
+
