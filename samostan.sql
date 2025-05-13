@@ -1,0 +1,24 @@
+--create database samostan;
+--use samosatan;
+
+--CREATE TABLE Svecenik (
+--    id INT PRIMARY KEY,
+--    ime VARCHAR(50),
+--    prezime VARCHAR(50),
+--    nadredeni_id INT,
+--    FOREIGN KEY (nadredeni_id) REFERENCES Svecenik(id)
+--);
+--CREATE TABLE Posao (
+--    id INT PRIMARY KEY,
+--    naziv VARCHAR(100),
+--    opis TEXT
+--);
+--CREATE TABLE Zaduzenje (
+--    svecenik_id INT,
+--    posao_id INT,
+--    datum_pocetka DATE,
+--    datum_zavrsetka DATE,
+--    PRIMARY KEY (svecenik_id, posao_id),
+--    FOREIGN KEY (svecenik_id) REFERENCES Svecenik(id),
+--    FOREIGN KEY (posao_id) REFERENCES Posao(id)
+--);
