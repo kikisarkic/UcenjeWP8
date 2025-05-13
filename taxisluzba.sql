@@ -1,0 +1,28 @@
+--create database taxisluzba;
+--use taxisluzba;
+--CREATE TABLE Vozilo (
+--    id INT PRIMARY KEY,
+--    marka VARCHAR(50),
+--    model VARCHAR(50),
+--    registracija VARCHAR(20) UNIQUE
+--);
+--CREATE TABLE Vozac (
+--    id INT PRIMARY KEY,
+--    ime VARCHAR(50),
+--    prezime VARCHAR(50),
+--    vozilo_id INT UNIQUE,
+--    FOREIGN KEY (vozilo_id) REFERENCES Vozilo(id)
+--);
+--CREATE TABLE Putnik (
+--    id INT PRIMARY KEY,
+--    ime VARCHAR(50),
+--    prezime VARCHAR(50)
+--);
+--CREATE TABLE Voznja (
+--    id INT PRIMARY KEY,
+--    vozac_id INT,
+--    datum DATETIME,
+--    trajanje_min INT,
+--    FOREIGN KEY (vozac_id) REFERENCES Vozac(id)
+--);
+
