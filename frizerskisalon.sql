@@ -1,25 +1,31 @@
 ﻿create database frizerskisalon;
+use master;
+go
+drop database if exists frizerskisalon;
+go
+create database frizerskisalon;
+go
 
---use frizerskisalon;
+use frizerskisalon;
 
---create table monalisa(
---sifra int,
---naziv varchar(20),
---ime varchar(20),
---prezime varchar(20),
---usluge  varchar (50)
---);
+create table korisnik(
+sifra int not null primary key identity (1,1),
+naziv varchar(20) not null,
+ime varchar(20) not null,
+prezime varchar(20) not null,
+usluge  varchar (50) not null references (sifra)
+);
 
 
---create table usluge(
---sifra int,
---ime varchar(20),
---prezime varchar(20),
---djelatnik varchar(20)
---);
+create table usluge(
+sifra int primary key identity (1,1),
+ime varchar(20) not null,
+prezime varchar(20) not null,
+djelatnik varchar(20) not null
+);
 
---create table djelatnik(
---sifra int,
---korisnik varchar(30),
---usluga varchar(20)
---);
+create table djelatnik(
+sifra int not null references usluge (sifra),
+korisnik varchar(30),
+usluga varchar(20)
+);
