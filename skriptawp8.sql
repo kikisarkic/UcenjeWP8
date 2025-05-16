@@ -44,9 +44,6 @@ insert into smjerovi (naziv,cijena,datumpokretanja,aktivan)
 values('Web programiranje',1200.54,'2025-05-16 17:00:01',1);
 
 insert into smjerovi (naziv) values
-('Serviser'),('Web design'), ('Marketing');
-
-insert into smjerovi (naziv) values
 --2
 ('Serviser'),
 --3
