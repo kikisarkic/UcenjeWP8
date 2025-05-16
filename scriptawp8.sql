@@ -1,4 +1,4 @@
-﻿--create database edunovawp8
+﻿
 use master;
 go
 drop database if exists edunovawp8;
@@ -12,7 +12,7 @@ use edunovawp8;
 create table smjerovi (
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
-cjena decimal(18,2) null,--null se nemora pisati
+cijena decimal(18,2) null,--null se nemora pisati
 datumpokretanja datetime, -- i ovo je null ako ne pise
 aktivan bit not null default 0
 );
