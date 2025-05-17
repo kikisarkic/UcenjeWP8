@@ -1,4 +1,4 @@
---create database bonavia;
+create database bonavia;
 use bonavia;
 
 create table emezeta(
