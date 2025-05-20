@@ -1,7 +1,7 @@
 --CREATE DATABASE biblioteka;
 --USE biblioteka;
 
-CREATE TABLE osobe (
+CREATE TABLE osobe(
     sifra INT PRIMARY KEY,
     ime VARCHAR(50),
     prezime VARCHAR(50),
