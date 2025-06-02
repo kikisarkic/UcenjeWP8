@@ -1,4 +1,5 @@
-﻿use master;
+﻿
+use master;
 go
 drop database if exists trgovina;
 go
