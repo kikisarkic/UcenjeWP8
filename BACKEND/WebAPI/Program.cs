@@ -21,7 +21,7 @@ app.UseAuthorization();
 app.UseSwagger();
 app.UseSwaggerUI(p =>
 {
-    p.EnableTryitOutByDefault();
+    p.EnableTryItOutByDefault();
 });
 
 app.MapControllers();
