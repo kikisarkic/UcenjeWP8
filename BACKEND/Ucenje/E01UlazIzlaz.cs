@@ -24,7 +24,9 @@ public static void Izvedi()
             Console.Write("Unesi svoje ime:");
 
             // varijabla ime
+
             string ime = Console.ReadLine();
+
             Console.WriteLine("Unijeli ste {0}", ime);
 
 
