@@ -1,84 +1,126 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
+﻿
 
 namespace Ucenje
 {
-    internal class E04UmjetnoGrananjeIf
+    internal class E04UvjetnoGrananjeIf
     {
+
         public static void Izvedi()
         {
-
             Console.WriteLine("E04UvjetnoGrananjeIf");
 
-            int broj = 7; // ovo je unio korisnik
 
-            // operator == provjera jednakosti, rezultat je tip podataka
+            int broj = 17; // Ovo je unio korisnik
 
-            bool uvijet = broj 7;
+            // operator ==   provjera jednakosti, rezultat je bool tip podatka
 
-            // osnovna If sintaksa
-            //if radi s bool tip podataka
+            bool uvjet = broj == 7;
+
+
+
+            // osnovna if sintaksa
+            // if radi s bool tipom podatka
             if (uvjet)
-            { Console.WriteLine("super");
-
-
+            {
+                Console.WriteLine("Super");
             }
-            // If nemora imati else 
-            //If nemora imati {} ali kada ih nema odnosi se samo na prvu slijedecu liniju
-            //puna sintaksa If naredbe
+
+
+
+            // if ne mora imati else
+            // if ne mora imati {} ali kada ih nema odnosi se samo na prvu sljedeću liniju
+
+            // puna sintaksa if naredbe
 
             if (broj > 2)
-
             {
-                Console.WriteLine("ok") }
-
+                Console.WriteLine("OK");
+            }
             else if (broj == 1)
             {
-
-                Console.WriteLine(("nije ocijena");
-
+                Console.WriteLine("Nije dobro");
+            }
+            else
+            {
+                Console.WriteLine("NIJE OCJENA");
             }
 
-            E03Operatori<>,,.>=, <=, != SearchOption koriste u if-u
 
-                    // logicki operatori
+
+            // operatori < >, >=, <=, != se koriste u if-u
+
+
+            // logički operatori: and, or i not
+
+            // and
+            // & (shift+6)
+
+
+            int i = 5, j = 10;
+
+            // prvi uvjet ne prolazi ALI se drugi uvjet gleda
+            if (i > 10 & j > 2)
+            {
+                Console.WriteLine("Neće se ispisati");
+            }
+
+            // INAČE KAKO SE KORISTI
+            // AKO prvi uvjet ne prođe, ne gleda se drugi
+            if (i > 10 && j > 2)
+            {
+                Console.WriteLine("Neće se ispisati");
+            }
+
+
+            // or
+            // | (altgr+w)
+            // AKO prvi uvjet prođe ne gleda se drugi
+            if (i == 4 || j == 2)
+            {
+                Console.WriteLine("Jedno od dvoje");
+            }
+
+
+            // not 
+            // !
+
+            if (!uvjet)
+            {
+                Console.WriteLine("Kada gore ne ispiše, ovdje će");
+            }
+
+
+
+            string grad = "Osijek";
+
+            if (uvjet && i > 10)
+            {
+                if (grad == "Vukovar")
+                {
+                    Console.WriteLine("Novi prvoligaš");
+                }
+            }
+
+
+            if (grad == "Osijek")
+            {
+                Console.WriteLine("Super");
+            }
+            else
+            {
+                Console.WriteLine("OK");
+            }
+
+
+
+
+            // inline if
+
+            Console.WriteLine(grad == "Osijek" ? "Super" : "OK");
+
+
 
         }
-
-        int i = 5, j = 10;
-        IFormatProvider(i>10 & j >2)
-        {
-            Console.WriteLine(("nece se ispisati);
-            }
-        //INACE KAKO SE KORISTI
-        //AKOprvi put neprode, ne gleda se drugi
-        IFormatProvider(in>10&&j >2)
-        {
-            Console.WriteLine("Nece se ispisati");
-        }
-
-        // or
-        // |or
-        ako prvi uvijet neprode negleda se drugi
-
-            if(int==4 || j==2)
-            {Console.WriteLine("jedno od dvoje");
-            }
-           
-
-
-
-
-
-
-
-
-
 
 
     }

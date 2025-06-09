@@ -1,66 +1,63 @@
-﻿
-
-namespace Ucenje
+﻿namespace Ucenje
 {
     internal class E03Operatori
     {
+        // u Program.cs dodati E03Operatori.Izvedi();
         public static void Izvedi()
         {
-            //pocetak
-
+            // početak
             Console.WriteLine("E03Operatori");
 
-            // = dodjelivanje vrijednosti s desne na lijevu stranu
+            // = dodjeljivanje vrijednosti s desne na lijevu stranu
+
+            // neću objašnjavati + - / * matematički
+
+            // + kao operator nadoljepljivanja (concate)
 
             string grad = "Osijek";
-                string ime = "Edunova";
+            string ime = "Edunova";
 
-            Console.WriteLine(grad + " " + " " + 5);
 
-            Console.WriteLine("{0} {1} {2}", grad, ime, 5);
+            Console.WriteLine(grad + " " + ime + " " + 5);// ovo nije najbolja praksa kod ispisa
 
-            //odraduje posao ali brze
+            Console.WriteLine("{0} {1} {2}", grad, ime, 5); // odrađuje isti posao kao gornja ali brže
 
-            //operator modulo % -> parnosti broj  
 
-            Console.WriteLine(8%2); //0
+            // operator modulo % -> parnosti broja
+
+            Console.WriteLine(8 % 2); //0
 
             int b = 9 % 2;
+
             Console.WriteLine(b);
 
-            // uvecanje broja za 1
+
+            // uvećanje broja za 1
             int i = 0;
 
-            // uvecaj za 1 
+            // uvećaj za 1
             i = i + 1;
+
             i += 1;
-            i++;
-            ++i;
 
-            // increment i decrement (++i, i++, i--, --i);
+            i++; // prvo se koristi pa se uveća
 
-            int k = 1, j = 0; // k=2 - 0, j = 1 
+            ++i; // prvo se uveća pa se koristi
 
-            k = ++k - j++;
+            // increment i decrement (++i, i++,  --i, i--);
 
-            Console.WriteLine(--k + j++); //sto se ispisuje);
+            int k = 1, j = 0;
 
+            k = ++k - j++; // k = 2 - 0, j = 1
 
-
-
+            Console.WriteLine(--k + j++); // što se ispisuje 1 + 1 = 2
 
 
 
-
-
-
-
-
-
-
-
-
-            //kraj
+            // kraj
         }
+
+
+
     }
 }
