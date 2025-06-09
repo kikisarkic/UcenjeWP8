@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Ucenje
 {
@@ -13,7 +9,7 @@ namespace Ucenje
 public static void Izvedi()
 
         {
-            Console.Write("Pozdrav svijetu");
+            Console.Write("Pozdrav Osijeku");
 
             Console.WriteLine("Isti red");
 
@@ -22,6 +18,7 @@ public static void Izvedi()
             Console.WriteLine("\t\t Ovo je uvuceno");
 
             Console.Write("Unesi svoje ime:");
+            Console.WriteLine("Hristina");
 
             // varijabla ime
 
