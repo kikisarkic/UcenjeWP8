@@ -1,155 +1,173 @@
-﻿s
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ucenje
 {
-    internal class A07forPetlja
+    internal class E07ForPetlja
     {
 
         public static void Izvedi()
         {
 
+            Console.WriteLine("E07 for");
 
-            Console.WriteLine("E07for");
+            // S dosadašnjim znanjem ispiši Hrvatska - Česka 5:1  10 puta
+
+            // rješenje ali nije Best practice - najbolja praksa
+            {
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+                Console.WriteLine("Hrvatska - Češka 5:1");
+            }
+
+            Console.WriteLine("****************************");
+
+            for (int i = 0; i < 10; i++)  // ovdje ne dolazi ;
+            {
+                Console.WriteLine("Hrvatska - Češka 5:1");
+            }
 
 
-            Console.WriteLine("Hrvatska - Ceska 5:1");
-            Console.WriteLine("Hrvatska - Ceska 5:1");
-            Console.WriteLine("Hrvatska - Ceska 5:1");
-            Console.WriteLine("Hrvatska - Ceska 5:1");
-            Console.WriteLine("Hrvatska - Ceska 5:1");
-            Console.WriteLine("Hrvatska - Ceska 5:1");
-            Console.WriteLine("Hrvatska - Ceska 5:1");
-            Console.WriteLine("Hrvatska - Ceska 5:1");
+            Console.WriteLine("****************************");
 
-            Console.WriteLine("**************");
-
-            for (int i = 0; i < 10; i++)  //ovdje nedolazi ;
-
-                Console.WriteLine("Hrvatska - Ceska 5:1");
-
-
-            Console.WriteLine("*************");
-            // ispisi prvih 10000 brojeva   
-
-            for (int i = 0; i < 100; i++) //i++ je isto kao i = i + 1
+            // ispiši prvih 100000 brojeva
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("{0}.", i + 1);
+            }
 
-                Console.WriteLine("**************");
-                // ispisi zbroj prvih 100 brojeva
 
-                Console.WriteLine(100 / 2 * 100 + 100 / 2); //4 operacije u jednoj liniji
-                Console.WriteLine(100 / 2 * (100 + 1)); // 3 operacije
+            Console.WriteLine("***************************");
 
-                int suma = 0
-                    for (int i = 0; i < 100; i++)
+            // ispiši zbroj prvih 100 brojeva
+            Console.WriteLine((100 / 2) * 100 + 100 / 2); //4 operacije
+            Console.WriteLine(100 / 2 * (100 + 1)); // 3 operacije
 
-                    suma
-= suma + i + 1; //100 operacija
+            int suma = 0;
+            for (int i = 0; i < 100; i++)
+            {
+                suma = suma + i + 1; // 100 operacija
             }
             Console.WriteLine(suma);
 
-            //Big o notacija  procitati o tome
+            // Big O notacija https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
 
-            Console.WriteLine("**************");
 
-            //ispisi brojeve od 10 do 1 unazad
+
+            Console.WriteLine("*************************");
+
+            // ispiši brojeve od 10 do 1 
 
             for (int i = 10; i > 0; i--)
-                Console.WriteLine(i);
-
-
-            Console.WriteLine("*******************");
-
-            //ispisi svaki 5 broj od 1 do 90
-
-            for (int i = 1; i <= 90; i += 5)
-
-                Console.WriteLine(i);
-
-            Console.WriteLine("******************");
-
-            for (int i = 79; i <= 123; i++)
-                if (i % 2 == 0)
-                { Console.WriteLine(i); }
             {
-
-
-
+                Console.WriteLine(i);
             }
 
-            Console.WriteLine("******************");
-            string grad = " Osijek";
+
+            Console.WriteLine("*************************");
+
+            // ispiši svaki 5 broj od 1 do 90
+            for (int i = 1; i <= 90; i += 5)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            Console.WriteLine("*************************");
+
+            // ispiši sve parne brojeve od 79 do 123
+
+            for (int i = 79; i <= 123; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+
+            Console.WriteLine("*************************");
+
+            int odKuda = 20, doKuda = 8; // u ovom slučaju se uopće ne ulazi u for
+
+            // Ovome težimo: kod bez konstanti
+            for (int i = odKuda; i < doKuda; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("*************************");
+
+            string grad = "Osijek";
             for (int i = 0; i < grad.Length; i++)
             {
                 Console.WriteLine(grad[i]);
             }
 
-            Console.WriteLine("******************");
-            // ugnjezdivanje petlje
 
+            Console.WriteLine("*************************");
+
+            // ugnježđivanje petlje
             for (int i = 1; i <= 10; i++)
-                for (int j = 1; j < 10; j++)
-                {
-                    Console.Write("{0}", i * j);
-
-                }
-            Console.WriteLine();
-
-
-            // domaci zadatak lijepo formatirati ispis tablice mnozenja
-
-
-
-            Console.WriteLine("*******************");
-            // mogucnost preskakanja (nastavljanja od pocetka) i nasilni prekida petlje
-
-            for (int i = 0; i <= 10; i++)
-                if (i == 3 || i == 5) // preskakanje brojeva 3 i 5
-                {
-                    continue; // nastavlja petlju od pocetka
-                } if (i == 8) // prekid petlje
             {
-                break; // prekida petlju iako nije i dosao do ktraja
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.Write("{0} ", i * j);
+                }
+                Console.WriteLine();
+            }
+            // DZ: Lijepo formatirati ispis tablice množenja
+
+
+
+            Console.WriteLine("*************************");
+
+            // mogućnost preskakanja (nastavljanja od početkka) i nasilnog prekida petlje
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 2)
+                {
+                    continue; // vraća na početak petlje, zato ja kažem preskače ostatak
+                }
+
+                if (i == 7)
+                {
+                    break; // prekida petlju iako nije i došao do kraja
+                }
 
                 Console.WriteLine(i);
+
             }
 
-            Console.WriteLine("******************");
 
 
-            // beskonacna petlja
+            Console.WriteLine("*************************");
 
-            for (int i = 0; i < 5; i = i) // nema uvjeta zaustavljanja
+            // beskonačna petlja
+            for (; ; )
             {
-                Console.WriteLine(Math.Pi);
-
-
-                // pazite na beskonacne petlje, mogu se dogoditi i u for petlji
-
-                for (; ; )
-                { Console.WriteLine("{0}{1}{2}{3}{4}{5}"),new Random).Next()
-              
-               
-                ,new Random().Next()
-                ,new Random().Next()
-                ,new Random().Next()
-                ,new Random().Next())
-                    Thread.Sleep(500);
-                    // pauza 500 milisekundi.
-
-
-
-
-
-                }
-
-
-
-
-
-
-
+                Console.WriteLine("{0} {1} {2} {3} {4} {5} ", new Random().Next()
+                    , new Random().Next()
+                    , new Random().Next()
+                    , new Random().Next()
+                    , new Random().Next(), new Random().Next());
+                Thread.Sleep(500);
             }
+
+
+        }
+
+
+
     }
 }

@@ -1,56 +1,86 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ucenje
 {
-    internal class E08whilePetlja
+    internal class E08WhilePetlja
     {
+
+
         public static void Izvedi()
         {
-            Console.WriteLine("While Petlja");
+
+            Console.WriteLine("while petlja");
 
             // while radi s bool tipom podatka
-            //beskonacna petlja
+
+            // beskonačna petlja
 
             while (true)
             {
-                Console.WriteLine("Ispis iz beskonacne petlje nakon cega je break");
+                Console.WriteLine("Ispis iz beskonačne petlje nakon čega je break");
                 break;
             }
-                //u while se nemora uci   //resetiram jednu te istu varijablu
-                int (i = 10)
-                { Console.WriteLine(i++); }
 
-                Console.WriteLine( "*********************" );
+            Console.WriteLine("********************");
 
 
-            int= 0;
-            while (int<10)
-            { 
-                Console.WriteLine(++i); 
+            // u while se ne mora ući
+
+            int i = 10;
+
+            while (i < 10)
+            {
+                Console.WriteLine(i++);
             }
 
-            Console.WriteLine("*********************");
+            Console.WriteLine("********************");
 
-            i= 0;
+
+            i = 0; // resetiram jedno te istu varijablu
+            while (i < 10)
+            {
+                Console.WriteLine(++i);
+            }
+
+
+
+            Console.WriteLine("********************");
+
+
+            i = 0;
             int j = 1;
-            while(i<10 @@ j==1)  
-                { Console.WriteLine(in++); }
+            while (i < 10 && j == 1) // može ići i || te !
+            {
+                Console.WriteLine(i++);
+            }
+
+            Console.WriteLine("********************");
 
             // continue i break rade isto kao i u for
-
-            // gnjeznenje je isto kao i for moze se kombinirati for i while
-            Console.WriteLine("*********************");
+            // gnježđenje je isto kao u for, može sekombinirati for i while
 
 
-            while (int>10)
-            { while (j==1)
-                { //kako prekinuti petlju while (i>10)?
-                 }
+            while (i > 10)
+            {
+                while (j == 1)
+                {
+                    // kako prekinuti petlju while (i > 10)?
+                    goto labela;
+                }
             }
 
         labela:
             Console.WriteLine("Gotov");
 
+
+
+
+
         }
+
     }
 }

@@ -1,46 +1,50 @@
-﻿
-
-using System.Threading.Channels;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Ucenje
 {
-    internal class E10forEach
+    internal class E10ForEach
     {
 
         public static void Izvedi()
         {
-            Console.WriteLine("forEach");
+            Console.WriteLine("foreach");
 
-            // forEach se koristi za prolazak kroz kolekcije, nizove, liste, itd.
-            Console.WriteLine("Unesi ime grada: ");
+            Console.Write("Unesi ime grada: ");
+
             string grad = Console.ReadLine();
 
-            //ispisi svako slovo grada jedno ispod drugog
 
-            for(int i=0; i< grad.Length; i++)
+            // ispiši svako slovo grada jedno ispod drugog
+            for (int i = 0; i < grad.Length; i++)
+            {
                 Console.WriteLine(grad[i]);
+            }
 
 
-
-            Console.WriteLine("*********************");
-
-            foreach (char z in grad) ;
+            Console.WriteLine("*****************************");
+            // u slučajevima kada idemo od početka do kraja (većina puta)
+            foreach (char z in grad)
             {
                 Console.WriteLine(z);
             }
-            Console.WriteLine("*********************");
-
-            int[] brojevi = { 1, 2,, 54,, 55, 4, 5, 45, 5, 5, 2, 2 };
-            foreach(int i in brojevi)
-            { Console.WriteLine(i); }
-
-            zadatak ciklicna tablica
 
 
 
+            Console.WriteLine("*****************************");
+
+            int[] brojevi = { 1, 23, 3, 2, 2, 3, 4, 4, 5, 54, 4, 5, 5, 5, 565, 5, 56, 6, 5, 9 };
+
+            foreach (int i in brojevi)
+            {
+                Console.WriteLine(i);
+            }
 
 
         }
-    }
     }
 }

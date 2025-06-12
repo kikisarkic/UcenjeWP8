@@ -1,28 +1,25 @@
-﻿
-
-namespace Ucenje
+﻿namespace Ucenje
 {
-    internal class E09dowhile
-    {public static void Izvedi()
+    internal class E09DoWhile
+    {
+
+        public static void Izvedi()
         {
-            Console.WriteLine("Do While");
-            //osnovna karakteristika do while:
-            //OSIGURAVA DA SE [PET;LJA IZVRSI BAR JEDNOM
+            Console.WriteLine("Do while");
 
-            Do { Console.WriteLine("Mora se barem jednom ispisati"); 
-            
-            }while (false) ;
+            // Osnovna karakteristika do while:
+            // OSIGURAVA DA SE PETLJA IZVEDE BAREM JEDNOM
 
-            //sve ostalo isto kao i ko for i while
+            do
+            {
+                Console.WriteLine("Mora se barem jednom ispisati");
+            } while (false);
 
-
-
-
-
-
+            // sve ostalo isto kao kod for i while
 
 
 
         }
+
     }
 }
