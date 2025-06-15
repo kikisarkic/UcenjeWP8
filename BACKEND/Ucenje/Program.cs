@@ -11,14 +11,14 @@ class Program
         Console.WriteLine("3. Operatori");
         Console.WriteLine("4. Uvjetno Grananje (If)");
         Console.WriteLine("5. Uvjetno Grananje (Switch)");
-
         Console.WriteLine("6a. Zad1 (Switch)");
-
         Console.WriteLine("6. Nizovi ");
         Console.WriteLine("7. ForPetlja ");
         Console.WriteLine("8. WhilePetlja ");
         Console.WriteLine("9. DoWhile ");
         Console.WriteLine("10. ForEach ");
+        Console.WriteLine("11. TryCatch ");
+        Console.WriteLine("11a. Z01 ");
 
         Console.Write("Choice: ");
 
@@ -39,27 +39,31 @@ class Program
                 E04UvjetnoGrananjeIf.Izvedi();
                 break;
             case "5":
-
-                E06Zad1.Izvedi();
-                break;
-            case "6a":
-                E06Nizovi.Izvedi();
+                E05UvjetnoGrananjeSwitch.Izvedi();
                 break;
             case "6":
-                E07ForPetlja.Izvedi();
+                E06Nizovi.Izvedi();
+                break;
+            case "6a":
+                E06Zad1.Izvedi();
                 break;
             case "7":
-               E08WhilePetlja.Izvedi();
+                E07ForPetlja.Izvedi();
                 break;
             case "8":
-                E09DoWhile.Izvedi();
+                E08WhilePetlja.Izvedi();
                 break;
             case "9":
-                E10ForEach.Izvedi();
+                E09DoWhile.Izvedi();
                 break;
             case "10":
-
-                E05UvjetnoGrananjeSwitch.Izvedi();
+                E10ForEach.Izvedi();
+                break;
+            case "11":
+                E11TryCatch.Izvedi();
+                break;
+            case "11a":
+                E11Z01.Izvedi();
                 break;
             default:
                 Console.WriteLine("Invalid choice.");
@@ -67,4 +71,3 @@ class Program
         }
     }
 }
-
